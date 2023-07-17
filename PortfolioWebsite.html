@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damini-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(5, 1, 20);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+      nav{
+        display:flex;
+        justify-content: space-around;
+        align-items:center;
+        height:80px;
+        background-color: rgb(4, 4, 31);
+      }
+      main section div{
+        align-items: center;
+      }
+      nav ul{
+       display:flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{ 
+       text-decoration: none;
+       color: white;
+      }
+      nav ul li a:hover{ 
+       color:rgb(86, 5, 83);
+       font-size:1.04rem;
+      }
+      main hr{
+        border: 0;
+        background: #ae97f1;
+        height:1.2px;
+        margin: 60px 84px;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+      }
+      .firstsection >div{
+        width:40%;
+      }    
+      .leftsection{
+      /* background-color: red;*/
+        font-size: 3rem;
+        margin:80px 30px; 
+      }
+      .rightsection img{
+        width:80%;
+      }
+      .purple{
+        color:rgb(68, 5, 110);
+      }
+      .text-gray{
+        color:gray
+      }
+      #element{
+        color:rgb(68, 5, 110);
+      }
+      .dam1{
+        max-width: 77vw;
+        margin: auto;
+        height:80vh;
+      }
+      .dam1 h1{
+        font-size:1.9rem;
+      }
+      .secondsection{
+        max-width: 77vw;
+        margin: auto;
+        height:80vh;
+      }
+      .secondsection h1{
+        font-size:1.9rem;
+      }
+      .secondsection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display:flex;
+        align-items: stretch;      
+      }      
+        .secondsection .vertical{
+          height:93px;
+          width:0.4px;
+          background-color:white;
+          margin: 0 80px;     
+      }
+      /*IMAGE LOGO*/
+      .image-top0{
+        width:55px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top1{
+        width:25px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top2{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top3{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top4{
+        width:45px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top5{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-top6{
+        width:70px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      /*END*/
+     .vertical-text{
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+     }
+     .vertical-desc{
+      position: relative;
+    top: 86px;
+    color: gray;
+    width: 100px;
+    font-size: 11px; 
+     }
+     footer{
+      background-color:#0e0e1a;     
+     }
+     .footer{
+      display: flex;
+      padding:23px 122px 0px 122px;
+      justify-content: space-evenly;
+     }
+     .footer .first{
+      text-align: start;
+     }
+     .footer .second ul{
+      list-style:none;
+     }
+     .footer>div{
+      width:690px;
+     }
+     footer .footer-rights{
+      text-align:end;
+      color: gray;
+      padding: 12px 0;
+     }
+     .damclass{
+      color: rgb(68, 5, 110);
+     }
+     .daminied{
+        max-width: 77vw;
+        margin: auto;
+        height:80vh;
+      }
+      .daminied h1{
+        font-size:1.9rem;
+      }
+      .daminied .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0px;
+        display:flex;
+        align-items: stretch;      
+      }     
+        .daminied .vertical1{
+          height:93px;
+          width:0.4px;
+          background-color:white;
+          margin: 0 180px;      
+      }
+      /*IMAGE LOGO*/
+      .image-topdam1{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-topdam2{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .image-topdam3{
+        width:30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }  
+      /*END*/
+     .vertical-title{
+      position: relative;
+      top: 75px;
+      width: 150px;
+      font-size: 14px;
+     }
+     .vertical-dam{
+      position: relative;
+    top: 86px;
+    color: grey;
+    width: 1080px;
+    font-size: 15px;  
+     }
+     .college{
+        color: rgb(68, 5, 110);
+     }
+     .text-color{
+        color: gray;
+     }
+     .daminicerti{
+        max-width: 77vw;
+        margin: auto;
+        height:80vh;
+      }    
+      .daminicerti h1{
+        font-size:1.9rem;
+      }
+      .certi1{
+        height: 20px;
+        width:15px
+      }
+     .text1{
+      color: gray;
+     }
+     .daminij{
+      color:gray;
+      font-size:0.9rem;
+      margin:50px 200px;
+      width:990px;
+      text-align:center ;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Damini's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li ><a href=" " >Home</a>
+              <select>
+                <option value="Education"><a href="http://127.0.0.1:5500/coding/Intrernship/Landingpage.html">Education</a>
+
+                </option>
+                <option value="Skills">Skills</option>
+                <option value="Projects">Projects</option>
+                <option value="Certificates">Certificates</option>
+                <option value="Certificates PDF & Badges">Certificates PDF & Badges</option>
+            </select>
+            </li>
+            <li> <a href="7566063619">Contact</a></li>
+            <li> <a href="daminijadon75@gmail.com">Email</a></li>
+             
+             <li> <a href="https://www.linkedin.com/in/damini-jadon-3a362b202">Linkdin</a></li>
+             <li> <a href="https://github.com/Damini56/daminijadon">Github</a></li>
+             
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
+    <main>
+      
+        <section class="firstsection">
+          
+            <div class="leftsection"> Hi, My name is <span class="purple">Damini</span>
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+                
+            </div>
+           
+            <div class="rightsection">
+                 <img src="dam.png" alt="da">
+                </div>
+     
+        </section>
+        <!--EDUCATION-->
+        <section class="daminied">
+          <span class="text-color">Without Education there is no Future</span>
+          <h1>Education</h1>
+  
+          <div class="box">
+              <div class="vertical1">
+                <img class="image-topdam1" src="https://clipart-library.com/images_k/graduation-cap-and-diploma-silhouette/graduation-cap-and-diploma-silhouette-22.png" alt="">
+                <div class="vertical-title">
+                 Batchelor of
+                 </br> Technology
+                 <h3 class="college">Rustamji Institute of Technology</h3>
+                </div>
+                <div class="vertical-dam">
+                 <ul>
+                  <li>Appearing 7th sem</li>
+                  <li>University: RGPV</li>
+                  <li>Scored:8.62</li>
+                 </ul>
+                </div>
+                
+              </div> 
+              <div class="vertical1">
+                <img class="image-topdam2" src="https://freepngclipart.com/download/building/74392-building-school-cartoon-free-transparent-image-hq.png" alt="">
+                <div class="vertical-title">
+                Higher Secondary
+                <h3 class="college">Rustamji Institute of Technology</h3>
+                </div>
+                <div class="vertical-dam">
+                  <ul>
+                      <li>2019-2020</li>
+                      <li>Board:M.P.State Board</li>
+                      <li>Percentage:86.8%</li>
+                      <li>In CGPA:9.1(School Topper)</li>
+                  </ul>
+                </div>
+                
+              </div> 
+              <div class="vertical1">
+                <img class="image-topdam3" src="https://freepngclipart.com/download/building/74392-building-school-cartoon-free-transparent-image-hq.png" alt="">
+                <div class="vertical-title">
+                 High School
+                 <h3 class="college">Rustamji Institute of Technology</h3>
+                </div>
+                <div class="vertical-dam">
+                  <ul>
+                      <li>2017-2018</li>
+                      <li>Board:M.P.State Board</li>
+                      <li>Percentage:84.4%</li>
+                      <li>In CGPA:8.9</li>
+                  </ul>
+                </div>
+              
+          </div>
+        </section>
+        <!--CERTIFICATES-->
+       
+        <section class="secondsection">
+          <span class="text-gray">What I have done</span>
+          <h1>Skills</h1>
+
+          <div class="box">
+              <div class="vertical">
+                <img class="image-top0" src="https://download.logo.wine/logo/C%2B%2B/C%2B%2B-Logo.wine.png" alt="">
+                <div class="vertical-text">
+                 C++ 
+                </div>
+                <div class="vertical-desc">
+                  C++ is a popular programming language.
+
+                  C++ is used to create computer programs, and is one of the most used language in game development.
+                </div>
+                
+              </div> 
+              <div class="vertical">
+                <img class="image-top1" src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" alt="">
+                <div class="vertical-text">
+                 Python
+                </div>
+                <div class="vertical-desc">
+                  Python is a popular programming language.
+
+                  Python can be used on a server to create web applications.
+                </div>
+                
+              </div> 
+              <div class="vertical">
+                <img class="image-top2" src="c.png" alt="">
+                <div class="vertical-text">
+                 C
+                </div>
+                <div class="vertical-desc">
+                  C is a general-purpose programming language, developed in 1972, and still quite popular.
+
+                  C is very powerful; it has been used to develop operating systems, databases, applications, etc.
+                  
+                  
+                </div>
+                
+              </div> 
+              <div class="vertical">
+                <img class="image-top3" src="html.png" alt="">
+                <div class="vertical-text">
+                  HTML 
+                </div>
+                <div class="vertical-desc">
+                  HTML is the standard markup language for Web pages.
+
+                  With HTML you can create your own Website.
+                </div>
+                
+              </div> 
+              <div class="vertical">
+                <img class="image-top4" src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png" alt="">
+                <div class="vertical-text">
+                 CSS
+                </div>
+                <div class="vertical-desc">
+                  CSS is the language we use to style an HTML document.
+
+                  CSS describes how HTML elements should be displayed.
+                </div>
+              </div> 
+              <div class="vertical"><img class="image-top5" src="https://clipart-library.com/new_gallery/5-58416_cloud-data-png.png" alt="">
+                <div class="vertical-text">
+                  Cloud Computing
+                </br>(Intermediate)
+                </div>
+                <div class="vertical-desc">
+                  Cloud computing simply refers to the delivery of computing services over the internet, including storage, databases, software, and analytics.
+                </div></div> 
+
+                <div class="vertical"><img class="image-top6" src="https://i0.wp.com/10besthealth.com/wp-content/uploads/2021/05/MATLAB-logo-2608423.png?w=1920&ssl=1" alt="">
+                  <div class="vertical-text">
+                    MATLAB
+                  
+                  </div>
+                  <div class="vertical-desc">
+                    MATLAB is a programming platform designed specifically for engineers and scientists to analyze and design systems and products that transform our world.
+                  </div></div> 
+                  
+                </div> 
+          </div>
+          
+        </section>
+       <!--PROJECTS-->
+        <section class="daminied">
+             <span class="text-color">Projects are the Implementation of skills</span>
+              <h1>Projects</h1>
+  
+        <div class="box">
+            <div class="vertical1">
+                   <img class="image-topdam1" src="project.png" alt="">
+              <div class="vertical-title">
+                  <div>Snake,Water and Gun
+
+                  </div>
+                 <h3 class="college">Python</h3>
+              </div>
+                
+            </div> 
+            <div class="vertical1">
+                
+                    <img class="image-topdam2" src="project.png" alt="">
+              <div class="vertical-title">
+                  <div>Seven Segment Counter
+
+                  </div>
+                  <h3 class="college">Group</h3>
+               
+              </div>
+              </div> 
+            
+          <div class="vertical1">
+            <img class="image-topdam3" src="project.png" alt="">
+            <div class="vertical-title">
+             <div>Portfolio website</div>
+             
+             <h3 class="college">HTML</h3>
+          </div>            
+      </div>
+      
+        </section>
+        <!--CERTIFICATES-->
+        </section>
+        <section class="daminicerti">
+          <span class="text1">Certificates are proof of Skills</span>
+          <h1>Certificates</h1>
+        </br>
+        <ul>
+          <li>Participation Certificate in <b>National Level Quiz on Python Programming Organized by Sigma Group Institute of Engineering, Gujarat</b></li>
+          <li>Participation Certificate in <b>Techfest "Fest-Over 2K21" (Event Code Fest 1.0)</b></li>
+          <li>Certificate of Appreciation <b>SHAPE AI</b></li>
+          <h4>
+              <u>Certificate of Course Completion:-</u>
+          </h4>
+          <li>Introduction to Python Organized by University of MICHIGAN(Coursera)</li>
+          <li>Preparing for Associate Cloud Engineer(Coursera)</li>
+          <li>Data Analytics Fundamentals (AWS)</li>
+          <li>Fundamental of Digital Marketing by Google Digital Unlocked</li>
+          <li>SIMULINK Onramp</li>
+          <li>Control Design Onramp with SIMULINK</li>
+          <li>MATLAB Onramp</li>
+          <li>Communication Skills</li>
+          <li>Learning Python (Linkdin)</li>
+          <li>Investment Banking Virtual Experience(Forage)</li>
+          <li>Google Cloud Labs (Badges)</li>
+          <h4><u>TCS iON</u></h4>
+          <li>Communication Skills</li>
+          <li>Presentation Skills</li>
+          <li>Email Etiquette</li>
+          <li>Resume Letter and cover writing</li>
+          <li>Telephone Etiquette</li>
+          <li>Interview Skills</li>
+      </ul>
+    </br>
+           <a href="https://drive.google.com/drive/folders/1Ghe7tTQ6emVVWqlj9CQrWFjeVXvgj3EG">https://drive.google.com/drive/folders/1Ghe7tTQ6emVVWqlj9CQrWFjeVXvgj3EG</a>
+      </section>
+    </br>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+      <!--GOOGLE CLOUD BADGES-->
+      <section class="daminied">
+        <span class="text-color">Google Cloud Badges</span>
+         <h1>Badges</h1>
+      <div class="box">
+        <div class="vertical1">
+               <img class="image-topdam1" src="https://www.pngmart.com/files/16/Google-Logo-PNG-Image.png" alt="">
+          <div class="vertical-title">
+              <div>Learn to Earn Level 1 & Level 2 cloud security Challenges
+
+              </div>
+            <a href="https://www.cloudskillsboost.google/public_profiles/f02969c4-d1f4-4f32-91cf-7b8d4b12db14">
+              <h3>Badges</h3>
+            </a>
+          </div>
+            
+        </div> 
+        <div class="vertical1">
+            
+                <img class="image-topdam2" src="https://www.pngmart.com/files/16/Google-Logo-PNG-Image.png" alt="">
+          <div class="vertical-title">
+              <div>Google Cloud Essential
+
+              </div>
+              <a href="https://www.cloudskillsboost.google/public_profiles/5c127cf4-65b1-4325-997e-d816fc3136bc"><h3>Google Cloud Skills Boost</h3></a>
+           
+          </div>
+          </div> 
+        
+      <div class="vertical1">
+        <img class="image-topdam3" src="https://www.pngmart.com/files/16/Google-Logo-PNG-Image.png" alt="">
+        <div class="vertical-title">
+         <div>Associate Cloud Engineer Track </div>
+         
+        <a href="https://www.cloudskillsboost.google/public_profiles/5c127cf4-65b1-4325-997e-d816fc3136bc"><h3>ACE</h3></a>
+      </div>            
+  </div>
+</section>
+<p class="daminij">I am Enthusiastic,self-motivated,reliable,responsible and hard working.
+  I am mature team worker and adaptable to all challenging situations. 
+  Seeking a challenging position in a reputed organization where I can learn new skills,expand my knowledge, and leverage my learnings. To secure a challenging role in a professional environment, utilizing my educational background, strong work ethic, and willingness to take on new responsibilities to contribute to the success of the company.</p>
+    </main>
+    <footer>
+      
+      <div class="footer">
+        <div class="first">
+          <h3>Damini's Portfolio</h3>
+        </div>
+    
+    
+        <div class="footer-rights">
+          Copyright&#169; www.Daminisportfolio.com | All rights reserved
+        </div>
+        
+      </div>
+      
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Learner', 'Student','Web Developer'],
+        typeSpeed: 50,
+      });
+      </script>
+      
+  </body>
+</html>
